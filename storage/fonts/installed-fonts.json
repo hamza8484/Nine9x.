@@ -1,0 +1,11 @@
+{
+    "dejavusans": {
+        "normal": "dejavusans_normal_59c852fd703c8bd703a72aa55a04f09e"
+    },
+    "dejavu sans": {
+        "bold": "C:\\xampp\\htdocs\\Nine9x\\vendor\\dompdf\\dompdf\/lib\/fonts\/DejaVuSans-Bold",
+        "bold_italic": "C:\\xampp\\htdocs\\Nine9x\\vendor\\dompdf\\dompdf\/lib\/fonts\/DejaVuSans-BoldOblique",
+        "italic": "C:\\xampp\\htdocs\\Nine9x\\vendor\\dompdf\\dompdf\/lib\/fonts\/DejaVuSans-Oblique",
+        "normal": "dejavu_sans_normal_59c852fd703c8bd703a72aa55a04f09e"
+    }
+}

@@ -1,0 +1,36 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateAccountTypesTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('account_types', function (Blueprint $table) {
+            $table->id();
+            $table->string('name'); // مثل: الأصول، المصروفات
+            $table->string('code')->unique(); // كود اختياري (مثل: 1000 للأصول)
+            $table->text('description')->nullable(); // وصف إضافي
+            $table->boolean('is_active')->default(true); // حقل لتحديد ما إذا كان النوع نشطًا
+            $table->timestamps();
+        });
+    }
+
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('account_types');
+    }
+}
